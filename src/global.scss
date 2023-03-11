@@ -24,3 +24,13 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.text-danger, .text-danger .sc-ion-action-sheet-md{
+    color: var(--ion-color-danger) !important;
+}
+
+// CARDS
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
