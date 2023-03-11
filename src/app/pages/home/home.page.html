@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item
+      *ngFor="let item of components"
+      [routerLink]="item.redirectTo"
+      detail="true"
+    >
+      <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      <ion-label>{{ item.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
