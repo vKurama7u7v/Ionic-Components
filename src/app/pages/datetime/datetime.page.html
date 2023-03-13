@@ -1,0 +1,59 @@
+<app-header title="DateTime"></app-header>
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>DateTime</ion-label>
+    </ion-list-header>
+
+    <ion-datetime locale="es-MX">
+      <span slot="time-label">Tiempo</span>
+    </ion-datetime>
+
+    <ion-list-header>
+      <ion-label>Month-Year</ion-label>
+    </ion-list-header>
+
+    <ion-datetime presentation="month-year"></ion-datetime>
+
+    <ion-list-header>
+      <ion-label>Time</ion-label>
+    </ion-list-header>
+
+    <ion-datetime presentation="time"></ion-datetime>
+
+    <ion-list-header>
+      <ion-label>New This Week</ion-label>
+    </ion-list-header>
+
+    <ion-datetime presentation="date-time" [preferWheel]="true"></ion-datetime>
+
+    <ion-list-header>
+      <ion-label>Set Values</ion-label>
+    </ion-list-header>
+
+    <ion-datetime
+      presentation="date"
+      [multiple]="true"
+      [value]="['2022-06-03', '2022-06-13', '2022-06-29']"
+    ></ion-datetime>
+
+    <ion-list-header>
+      <ion-label>Edit Header</ion-label>
+    </ion-list-header>
+
+    <ion-datetime>
+      <span slot="title">Select a Reservation Date</span>
+    </ion-datetime>
+
+    <ion-list-header>
+      <ion-label>Edit Buttons</ion-label>
+    </ion-list-header>
+
+    <ion-datetime
+      [showDefaultButtons]="true"
+      doneText="All set"
+      cancelText="Never mind"
+    >
+    </ion-datetime>
+  </ion-list>
+</ion-content>

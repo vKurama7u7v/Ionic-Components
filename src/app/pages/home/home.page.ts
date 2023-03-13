@@ -12,43 +12,65 @@ interface Components {
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
   components: Components[] = [
     {
       icon: 'american-football-outline',
       name: 'Action Sheet',
-      redirectTo: '/action-sheet'
+      redirectTo: '/action-sheet',
     },
     {
       icon: 'alert-circle-outline',
       name: 'Alert',
-      redirectTo: '/alert'
+      redirectTo: '/alert',
     },
     {
       icon: 'beaker-outline',
       name: 'Avatar',
-      redirectTo: '/avatar'
+      redirectTo: '/avatar',
     },
     {
       icon: 'radio-button-off-outline',
       name: 'Buttons',
-      redirectTo: '/buttons'
+      redirectTo: '/buttons',
     },
     {
       icon: 'card-outline',
       name: 'Cards',
-      redirectTo: '/card'
+      redirectTo: '/card',
     },
     {
       icon: 'checkbox-outline',
       name: 'Checkbox',
-      redirectTo: '/checkbox'
+      redirectTo: '/checkbox',
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'DateTime',
+      redirectTo: '/datetime',
+    },
+    {
+      icon: 'duplicate-outline',
+      name: 'Fab',
+      redirectTo: '/fab',
+    },
+    {
+      icon: 'grid-outline',
+      name: 'grid',
+      redirectTo: '/grid',
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'Infinite Scroll',
+      redirectTo: '/infinite-scroll',
+    },
+    {
+      icon: 'hammer-outline',
+      name: 'Input Forms',
+      redirectTo: '/input',
     },
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
