@@ -68,6 +68,16 @@ export class HomePage implements OnInit {
       name: 'Input Forms',
       redirectTo: '/input',
     },
+    {
+      icon: 'list-outline',
+      name: 'List',
+      redirectTo: '/list',
+    },
+    {
+      icon: 'menu-outline',
+      name: 'Menu',
+      redirectTo: '/menu',
+    },
   ];
 
   constructor() {}
